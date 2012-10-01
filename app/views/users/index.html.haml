@@ -1,0 +1,12 @@
+%h1 List of Users
+%table
+  %thead
+    %tr
+      %th First Name
+      %th Last Name
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.first_name
+        %td= user.last_name
+=link_to "Add User", new_user_path

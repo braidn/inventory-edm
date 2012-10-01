@@ -1,0 +1,10 @@
+=form_for @user do |f|
+  %fieldset
+    %div.twelve
+      =f.label :first_name, "First Name"
+      =f.text_field :first_name
+      %br
+      =f.label :last_name, "Last Name"
+      =f.text_field :last_name
+      %br
+      =f.submit "Submit", :class => 'small button'
