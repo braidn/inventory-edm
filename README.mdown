@@ -1,0 +1,4 @@
+###Inventory
+========================
+
+Simple app to manage inventory lists between users and items. Pet project testing out the likes of Zurb Foundation.
