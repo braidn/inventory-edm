@@ -1,0 +1,32 @@
+=form_for @item do |f|
+  %fieldset
+    .six
+      =f.label :name, "Name"
+      =f.text_field :name
+      %br
+      =f.label :location, "Location"
+      =f.text_field :location
+      %br
+      =f.label :serial, "Serial"
+      =f.text_field :serial
+      %br
+      =f.label :kind, "Kind"
+      =f.text_field :kind
+      %br
+      .two
+        =f.label :purchaseDate, "Purchase Date"
+        =f.date_select :purchaseDate
+        %br
+        =f.label :retireDate, "Retire Date"
+        =f.date_select :retireDate, {include_blank: true}
+        %br
+      =f.label :backup, "Backup"
+      =f.text_field :backup
+      %br
+      =f.label :os, "Operating System"
+      =f.text_field :os
+      %br
+      .three
+        =f.label :user_id, "User"
+        =f.collection_select(:user_id, User.all, :id, :first_name)
+      =f.submit

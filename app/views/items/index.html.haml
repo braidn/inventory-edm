@@ -1,0 +1,14 @@
+%h1 Items#index
+%table
+  %thead
+    %tr
+      %th Name
+      %th Location
+      %th Owner
+  %tbody
+    - @items.each do |item|
+      %tr
+        %td= item.name
+        %td= item.location
+        %td= item.user.first_name
+=link_to "Add Item", new_item_path
