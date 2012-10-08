@@ -32,5 +32,5 @@ group :test do
   gem "launchy"
 end
 group :production do
-  gem "unicorn", ">= 4.3.1"
+  gem 'pg'
 end
