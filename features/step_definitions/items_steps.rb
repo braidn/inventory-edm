@@ -1,5 +1,6 @@
 Given /^I am at "(.*?)" root$/ do |model|
   visit("/#{model}")
+  puts current_path
 end
 
 Given /^there is an existing item$/ do

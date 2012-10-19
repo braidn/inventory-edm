@@ -5,10 +5,13 @@
       %th Name
       %th Location
       %th Owner
+      %th Modify
   %tbody
     - @items.each do |item|
       %tr
         %td= item.name
         %td= item.location
         %td= item.user.first_name
+        %td
+          = link_to "Modify", edit_item_path(item), :class => "tiny round button"
 =link_to "Add Item", new_item_path
