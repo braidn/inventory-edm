@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.8'
-gem 'sqlite3', :group => [:development, :test]
 gem "haml"
 
 group :assets do
@@ -15,6 +14,7 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem "rspec-rails"
+  gem 'sqlite3'
 end
 
 group :development do
@@ -31,6 +31,7 @@ group :test do
   gem "database_cleaner"
   gem "launchy"
 end
+
 group :production do
   gem 'pg'
 end
